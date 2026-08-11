@@ -50,7 +50,7 @@ A Gradio app for everyday generation — the notebook you'd use once you have (o
 - Optionally load a LoRA checkpoint you trained, with an adjustable strength slider
 - Upload a first-frame image, write a prompt (dialogue can be written directly into the prompt — there's no separate "sound prompt" field in the current model)
 - Pick resolution, frame count, seed, inference steps
-- Generate a previewable MP4, saved to Drive
+- Generate a previewable MP4, saved to the Colab session's local disk (`/content/generations`) — **not** Drive. Only the ~32GB model cache and any LoRA checkpoints you train live on Drive; generated videos are treated as disposable per-session scratch output. A final "Browse generated videos" cell lists and inline-previews everything you've generated so far, so you can review results without leaving the notebook — just download anything you want to keep before the runtime disconnects.
 
 ---
 
