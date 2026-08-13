@@ -48,7 +48,7 @@ A Gradio app for everyday generation — the notebook you'd use once you have (o
 
 - Load MiniMax-H3-NF4 (or BF16)
 - Download ready-to-use community LoRAs — [`Inner-Reflections/MiniMax-H3-Looping-Sketch-Anime`](https://huggingface.co/Inner-Reflections/MiniMax-H3-Looping-Sketch-Anime) (a hand-drawn 2D anime look) and [`lightx2v/Minimax-h3-Turbo`](https://huggingface.co/lightx2v/Minimax-h3-Turbo) (an 8-step distilled LoRA for fast previews, vs. H3's normal 50 steps) — no training required; cached to Drive so each only downloads once
-- Optionally load a LoRA checkpoint you trained, with an adjustable strength slider
+- Two independent LoRA slots — **Style** and **Speed** — each with its own strength slider, so a style LoRA (anime) and a speed LoRA (Turbo) can be stacked and used together, or either used alone; also usable for LoRAs you trained yourself
 - Upload a first-frame image, write a prompt (dialogue can be written directly into the prompt — there's no separate "sound prompt" field in the current model)
 - Pick resolution, frame count, seed, inference steps
 - Generate a previewable MP4, saved to the Colab session's local disk (`/content/generations`) — **not** Drive. Only the ~32GB model cache and any LoRA checkpoints you train live on Drive; generated videos are treated as disposable per-session scratch output. A final "Browse generated videos" cell lists and inline-previews everything you've generated so far, so you can review results without leaving the notebook — just download anything you want to keep before the runtime disconnects.
