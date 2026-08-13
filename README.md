@@ -47,7 +47,7 @@ MiniMax-H3-NF4 (quantized base model) + your LoRA
 A Gradio app for everyday generation — the notebook you'd use once you have (or don't need) a trained LoRA:
 
 - Load MiniMax-H3-NF4 (or BF16)
-- Download a ready-to-use community style LoRA — [`Inner-Reflections/MiniMax-H3-Looping-Sketch-Anime`](https://huggingface.co/Inner-Reflections/MiniMax-H3-Looping-Sketch-Anime), a hand-drawn 2D anime look — with no training required; cached to Drive so it only downloads once
+- Download ready-to-use community LoRAs — [`Inner-Reflections/MiniMax-H3-Looping-Sketch-Anime`](https://huggingface.co/Inner-Reflections/MiniMax-H3-Looping-Sketch-Anime) (a hand-drawn 2D anime look) and [`lightx2v/Minimax-h3-Turbo`](https://huggingface.co/lightx2v/Minimax-h3-Turbo) (an 8-step distilled LoRA for fast previews, vs. H3's normal 50 steps) — no training required; cached to Drive so each only downloads once
 - Optionally load a LoRA checkpoint you trained, with an adjustable strength slider
 - Upload a first-frame image, write a prompt (dialogue can be written directly into the prompt — there's no separate "sound prompt" field in the current model)
 - Pick resolution, frame count, seed, inference steps
