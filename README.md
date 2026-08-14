@@ -47,7 +47,7 @@ MiniMax-H3-NF4 (quantized base model) + your LoRA
 A Gradio app for everyday generation — the notebook you'd use once you have (or don't need) a trained LoRA:
 
 - Load MiniMax-H3-NF4 (or BF16)
-- Download ready-to-use community LoRAs — [`Inner-Reflections/MiniMax-H3-Looping-Sketch-Anime`](https://huggingface.co/Inner-Reflections/MiniMax-H3-Looping-Sketch-Anime) (a hand-drawn 2D anime look) and [`lightx2v/Minimax-h3-Turbo`](https://huggingface.co/lightx2v/Minimax-h3-Turbo) (an 8-step distilled LoRA for fast previews, vs. H3's normal 50 steps) — no training required; cached to Drive so each only downloads once
+- Download ready-to-use community LoRAs — [`Inner-Reflections/MiniMax-H3-Looping-Sketch-Anime`](https://huggingface.co/Inner-Reflections/MiniMax-H3-Looping-Sketch-Anime) (a hand-drawn 2D anime look) and [`lightx2v/Minimax-h3-Turbo`](https://huggingface.co/lightx2v/Minimax-h3-Turbo) (a 4-step distilled LoRA for fast previews, vs. H3's normal 50 steps — pairs with an explicit **Flow shift** UI control, since Turbo LoRAs need a non-default sampling schedule or they produce corrupted static-noise output) — no training required; cached to Drive so each only downloads once
 - Two independent LoRA slots — **Style** and **Speed** — each with its own strength slider, so a style LoRA (anime) and a speed LoRA (Turbo) can be stacked and used together, or either used alone; also usable for LoRAs you trained yourself
 - Upload a first-frame image, write a prompt (dialogue can be written directly into the prompt — there's no separate "sound prompt" field in the current model)
 - Pick resolution, frame count, seed, inference steps
